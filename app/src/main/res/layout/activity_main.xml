@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/AzureHue">
+
+
+    <Spinner
+        android:id="@+id/SpinOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/SpinActions" />
+
+    <EditText
+        android:id="@+id/ETUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/buttonAdd"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/btnAdd"
+            android:textColor="@color/white"
+            app:buttonColor="@color/black"
+            app:cornerRadius="50dp"
+            app:glowColor="@color/Neon"
+            app:pressedGlowSize="25dp"
+            app:unpressedGlowSize="20dp" />
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/btnDelete"
+            android:textColor="@color/white"
+            app:buttonColor="@color/black"
+            app:cornerRadius="50dp"
+            app:glowColor="@color/Neon"
+            app:pressedGlowSize="25dp"
+            app:unpressedGlowSize="20dp" />
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/buttonClear"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/btnClear"
+            android:textColor="@color/white"
+            app:buttonColor="@color/black"
+            app:cornerRadius="50dp"
+            app:glowColor="@color/Neon"
+            app:pressedGlowSize="25dp"
+            app:unpressedGlowSize="20dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListViewAll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

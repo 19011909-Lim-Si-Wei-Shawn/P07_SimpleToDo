@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Simple To Do</string>
+    <string name="ETAdd">Type in a New Task here</string>
+    <string name="ETRemove">Type in the Index of the Task to be Removed</string>
+    <string name="btnAdd">ADD</string>
+    <string name="btnDelete">DELETE</string>
+    <string name="btnClear">CLEAR</string>
+    <string name="SpinHint">SELECT OPTION</string>
+    <string-array name="SpinActions">
+        <item>Add a New Task</item>
+        <item>Remove a Task</item>
+    </string-array>
+</resources>
